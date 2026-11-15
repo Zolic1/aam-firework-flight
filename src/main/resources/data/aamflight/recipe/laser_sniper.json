@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:diamond",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.laser_sniper",
+        "color": "light_purple",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 90,
+        "b_lmg_range": 512,
+        "b_lmg_spread": 0.0,
+        "b_lmg_rps": 0.4,
+        "b_lmg_mag": 2,
+        "b_lmg_reload": 70,
+        "b_lmg_pierce": 10,
+        "b_lmg_bspeed": 1500,
+        "b_lmg_pellets": 1,
+        "b_lmg_bullet_type": 5,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:laser_sniper_3d"
+    }
+  }
+}

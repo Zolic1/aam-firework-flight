@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "IRI",
+    "G G"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "minecraft:netherite_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {"text": "RWR 头盔", "color": "green"},
+      "minecraft:lore": [
+        {"text": "★ 视野中心显示绿色雷达环", "color": "green", "italic": false},
+        {"text": "★ 红点 = 附近玩家，黄点 = 飞行物", "color": "gray", "italic": false},
+        {"text": "★ 越近点越大", "color": "dark_gray", "italic": false}
+      ],
+      "minecraft:max_damage": 3000,
+      "minecraft:attribute_modifiers": [
+        {"type": "minecraft:armor", "id": "aamflight:rwr_armor", "amount": 4, "operation": "add_value", "slot": "armor"},
+        {"type": "minecraft:armor_toughness", "id": "aamflight:rwr_toughness", "amount": 3, "operation": "add_value", "slot": "armor"}
+      ],
+      "minecraft:custom_data": {"aam_rwr": true}
+    }
+  }
+}

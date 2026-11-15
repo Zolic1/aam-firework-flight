@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "T": "minecraft:tnt",
+        "L": "minecraft:leather"
+    },
+    "pattern": [
+        "L",
+        "T",
+        "L"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "tnt"
+            },
+            "item_model": "tnt",
+            "item_name": [
+                {
+                    "text": "便捷TNT",
+                    "color": "red",
+                    "bold": true
+                }
+            ]
+        }
+    }
+}

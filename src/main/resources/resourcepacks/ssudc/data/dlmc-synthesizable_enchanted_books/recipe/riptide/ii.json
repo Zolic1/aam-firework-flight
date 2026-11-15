@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:wet_sponge",
+        "minecraft:wet_sponge",
+        "minecraft:prismarine_crystals",
+        "minecraft:prismarine_crystals"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:riptide": 2
+            }
+        }
+    }
+}

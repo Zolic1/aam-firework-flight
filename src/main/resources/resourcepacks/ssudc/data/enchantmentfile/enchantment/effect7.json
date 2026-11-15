@@ -1,0 +1,23 @@
+{
+    "description": {"text": "凋零之触", "color": "dark_gray"},
+    "anvil_cost": 3,
+    "max_level": 3,
+    "weight": 3,
+    "min_cost": {"base": 15, "per_level_above_first": 8},
+    "max_cost": {"base": 30, "per_level_above_first": 12},
+    "slots": ["mainhand"],
+    "supported_items": "#minecraft:enchantable/sword",
+    "effects": {
+      "minecraft:post_attack": [{
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:wither",
+          "min_duration": 3.0, "max_duration": 5.0,
+          "min_amplifier": {"type": "minecraft:linear", "base": 0, "per_level_above_first": 1},
+          "max_amplifier": {"type": "minecraft:linear", "base": 0, "per_level_above_first": 1}
+        },
+        "affected": "victim",
+        "enchanted": "attacker"
+      }]
+    }
+  }

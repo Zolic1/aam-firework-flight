@@ -1,0 +1,14 @@
+{
+  "values": [
+    "confin1:confin/attributes",
+    "op:lxdeffects",
+    "op:pre",
+    "op:lxd",
+    "op:armor",
+    "gravityless:tick",
+    "tracer:tick",
+    "vanishing:tick",
+    "auto:tick",
+    "smoker:tick"
+  ]
+}

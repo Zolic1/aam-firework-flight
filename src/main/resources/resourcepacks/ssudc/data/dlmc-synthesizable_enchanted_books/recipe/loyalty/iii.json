@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:arms_up_pottery_sherd",
+        "minecraft:arms_up_pottery_sherd",
+        "minecraft:arms_up_pottery_sherd",
+        "minecraft:arms_up_pottery_sherd",
+        "minecraft:sunflower",
+        "minecraft:sunflower",
+        "minecraft:sunflower",
+        "minecraft:sunflower"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:loyalty": 3
+            }
+        }
+    }
+}

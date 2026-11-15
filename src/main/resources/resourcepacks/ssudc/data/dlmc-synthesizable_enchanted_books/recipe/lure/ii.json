@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "#dlmc-synthesizable_enchanted_books:fish_bucket",
+        "#dlmc-synthesizable_enchanted_books:fish_bucket",
+        "#dlmc-synthesizable_enchanted_books:fish_bucket",
+        "#dlmc-synthesizable_enchanted_books:fish_bucket"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:lure": 2
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 100,
+  "group": "coal",
+  "ingredient": "minecraft:enchanted_book",
+  "result": {
+    "id": "minecraft:enchanted_golden_apple"
+  }
+}

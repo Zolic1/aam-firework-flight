@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:rail",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.railgun",
+        "color": "dark_aqua",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 70,
+        "b_lmg_range": 640,
+        "b_lmg_spread": 0.02,
+        "b_lmg_rps": 0.5,
+        "b_lmg_mag": 3,
+        "b_lmg_reload": 70,
+        "b_lmg_pierce": 6,
+        "b_lmg_bspeed": 1800,
+        "b_lmg_pellets": 1,
+        "b_lmg_bullet_type": 5,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:railgun_3d"
+    }
+  }
+}

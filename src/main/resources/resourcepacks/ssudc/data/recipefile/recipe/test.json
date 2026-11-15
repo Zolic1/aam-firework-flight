@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:tnt",
+    "minecraft:tnt",
+    "minecraft:tnt",
+    "minecraft:tnt",
+    "minecraft:tnt",
+    "minecraft:tnt",
+    "minecraft:porkchop",
+    "minecraft:porkchop",
+    "minecraft:porkchop"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:creeper_spawn_egg"
+  }
+}
+
+
+

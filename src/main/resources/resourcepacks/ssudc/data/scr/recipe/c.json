@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "I": "minecraft:iron_block",
+        "P": "minecraft:carved_pumpkin"
+    },
+    "pattern": [
+        " I ",
+        "IPI",
+        " I "
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "iron_golem"
+            },
+            "item_model": "carved_pumpkin",
+            "item_name": [
+                {
+                    "text": "便捷铁傀儡",
+                    "color": "gray",
+                    "bold": true
+                }
+            ]
+        }
+    }
+}

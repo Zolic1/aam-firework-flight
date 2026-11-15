@@ -1,0 +1,33 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "minecraft:lava_bucket"
+
+
+    },
+    "pattern": [
+        "G"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "minecraft:armor_stand",
+                "Tags": ["killinf"],
+                "Invisible": true,
+                "Invulnerable": true,
+                "NoGravity": true,
+                "Marker": true,
+                "Small": true
+            },
+            "item_model": "minecraft:lava_bucket",
+            "item_name": {"text":"销毁","color":"yellow","bold":true},
+            "lore": [
+                {
+                    "text": "杀死附近的无限方块","color": "green"
+                }
+            ]
+        }
+    }
+}

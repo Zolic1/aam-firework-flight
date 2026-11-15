@@ -1,0 +1,39 @@
+{
+    "description": {
+      "text": "生命提升",
+      "color": "red"
+    },
+    "anvil_cost": 8,
+    "max_level": 3,
+    "weight": 3,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 10
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "slots": [
+      "head",
+      "chest",
+      "legs",
+      "feet"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "health_boost",
+          "attribute": "minecraft:max_health",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 4.0,
+            "per_level_above_first": 4.0
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }

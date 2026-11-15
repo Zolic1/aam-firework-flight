@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.aam.flight.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerPlayerMixin"
+  ],
+  "client": [
+    "GuiMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

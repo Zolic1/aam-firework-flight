@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "equipment",
+    "ingredients": [
+      "minecraft:crossbow",
+      "minecraft:nether_star"
+    ],
+    "result": {
+      "count": 1,
+      "id": "minecraft:crossbow",
+      "components": {
+        "max_damage": 600,
+        "enchantments": {
+          "enchantmentfile:powerpro": 5,
+          "enchantmentfile:tntcrossbow": 1,
+          "minecraft:power": 7
+        },
+        "item_name": {
+            "text": "AX50",
+            "color": "dark_green"
+        },
+        "lore": [
+            {
+                "text": "配件#1：钢性弓弦",
+                "italic": false
+            }
+        ]
+      }
+    }
+  }

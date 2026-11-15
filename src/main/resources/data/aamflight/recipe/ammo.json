@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:arrow"
+  ],
+  "result": {
+    "id": "aamflight:ammo",
+    "count": 10
+  }
+}

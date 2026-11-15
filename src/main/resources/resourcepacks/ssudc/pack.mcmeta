@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 88,
+    "supported_formats": { "min_inclusive": 60, "max_inclusive": 200 },
+    "description": "SSUDC 数据包（可选喵）"
+  }
+}

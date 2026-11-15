@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:lead",
+        "minecraft:chainmail_leggings"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:binding_curse": 1
+            }
+        }
+    }
+}

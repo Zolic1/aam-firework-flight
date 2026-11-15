@@ -1,0 +1,117 @@
+{
+    "description": {
+      "text": "唤雷",
+      "color": "gold"
+    },
+    "anvil_cost": 4,
+    "max_level": 3,
+    "weight": 8,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 12
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/weapon",
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "effect": {
+            "type": "minecraft:summon_entity",
+            "entity": "minecraft:lightning_bolt",
+            "join_team": false
+          },
+          "enchanted": "attacker",
+          "affected": "victim",
+          "requirements": {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "enchantmentfile:effect10",
+            "unenchanted_chance": 0.0,
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.05,
+              "per_level_above_first": 0.05
+            }
+          }
+        },
+        {
+          "effect": {
+            "type": "minecraft:damage_entity",
+            "damage_type": "minecraft:lightning_bolt",
+            "min_damage": {
+              "type": "minecraft:linear",
+              "base": 20.0,
+              "per_level_above_first": 0.0
+            },
+            "max_damage": {
+              "type": "minecraft:linear",
+              "base": 15.0,
+              "per_level_above_first": 0.0
+            }
+          },
+          "enchanted": "attacker",
+          "affected": "victim",
+          "requirements": {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "enchantmentfile:effect10",
+            "unenchanted_chance": 0.0,
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.05,
+              "per_level_above_first": 0.05
+            }
+          }
+        },
+        {
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:blindness",
+            "min_duration": 3.0,
+            "max_duration": 3.0,
+            "min_amplifier": 0,
+            "max_amplifier": 0
+          },
+          "enchanted": "attacker",
+          "affected": "victim",
+          "requirements": {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "enchantmentfile:effect10",
+            "unenchanted_chance": 0.0,
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.05,
+              "per_level_above_first": 0.05
+            }
+          }
+        },
+        {
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:slowness",
+            "min_duration": 5.0,
+            "max_duration": 5.0,
+            "min_amplifier": 1,
+            "max_amplifier": 1
+          },
+          "enchanted": "attacker",
+          "affected": "victim",
+          "requirements": {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "enchantmentfile:effect10",
+            "unenchanted_chance": 0.0,
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.05,
+              "per_level_above_first": 0.05
+            }
+          }
+        }
+      ]
+    }
+  }

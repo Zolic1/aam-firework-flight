@@ -1,0 +1,45 @@
+{
+    "description": {
+        "text": "熔融",
+        "color": "yellow"
+    },
+    "anvil_cost": 10,
+    "max_level": 5,
+    "weight": 500,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 2
+    },
+    "max_cost": {
+        "base": 10,
+        "per_level_above_first": 2
+    },
+    "supported_items": "#minecraft:enchantable/sword",
+    "slots": ["mainhand"],
+    "exclusive_set": "enchantmentfile:unbreakable",
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "ignite",
+                    "duration": 1.5,
+                    "chance": 0.5
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            }
+        ],
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+       "type": "minecraft:linear",
+       "base": 3.0,
+      "per_level_above_first": 2.0
+    }
+                }
+            }
+        ]
+    }
+}

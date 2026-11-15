@@ -1,0 +1,83 @@
+{
+    "description": {
+        "text": "爆炸锤",
+        "color": "dark_red"
+    },
+    "anvil_cost": 8,
+    "max_level": 4,
+    "weight": 3,
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 15
+    },
+    "slots": ["mainhand"],
+    "supported_items": "minecraft:mace",
+    "primary_items": "minecraft:mace",
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "minecraft:linear",
+                        "base": 0.1,
+                        "per_level_above_first": 0.1
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "source_entity": {
+                            "type": "minecraft:player"
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:explode",
+                            "attribute_to_user": false,
+                            "radius": 7.0,
+                            "create_fire": false,
+                            "block_interaction": "none",
+                            "damage_type": "minecraft:player_explosion",
+                            "knockback_multiplier": 1.0,
+                            "large_particle": {
+                                "type": "minecraft:lava"
+                            },
+                            "small_particle": {
+                                "type": "minecraft:lava"
+                            },
+                            "sound": "minecraft:entity.generic.explode"
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "enchantmentfile:lava_eruption"
+                        }
+                    ]
+                },
+                "enchanted": "attacker",
+                "affected": "victim",
+                "requirements": {
+                    "condition": "minecraft:random_chance_with_enchanted_bonus",
+                    "enchantment": "enchantmentfile:macepr",
+                    "unenchanted_chance": 0.0,
+                    "enchanted_chance": {
+                        "type": "minecraft:linear",
+                        "base": 0.05,
+                        "per_level_above_first": 0.05
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type":"crafting_shaped",
+    "key" :{
+        "#" : "minecraft:bone_meal",
+        "*" : "minecraft:apple"
+    },
+    "pattern" : [
+        "#",
+        "*"
+    ],
+    "result" : {
+        "id" : "minecraft:apple",
+        "count": 2
+    }
+
+}

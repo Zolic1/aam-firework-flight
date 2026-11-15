@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:arrow",
+        "minecraft:piston",
+        "minecraft:piston",
+        "minecraft:piston"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:punch": 1
+            }
+        }
+    }
+}

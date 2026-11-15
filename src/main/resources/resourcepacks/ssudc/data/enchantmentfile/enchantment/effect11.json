@@ -1,0 +1,167 @@
+{
+    "description": {
+      "text": "聚能",
+      "color": "gold"
+    },
+    "anvil_cost": 2,
+    "max_level": 1,
+    "weight": 8,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 45,
+      "per_level_above_first": 0
+    },
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "primary_items": "#minecraft:enchantable/crossbow",
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": [
+      "minecraft:quick_charge"
+    ],
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 2,
+          "per_level_above_first": 0.0
+        }
+      },
+      "minecraft:crossbow_charging_sounds": [
+        {
+          "start": "minecraft:block.respawn_anchor.charge",
+          "end": "minecraft:block.respawn_anchor.charge"
+        }
+      ],
+      "minecraft:damage": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 15.0,
+              "per_level_above_first": 0.0
+            }
+          },
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "effect": {
+            "type": "minecraft:all_of",
+            "effects": [
+              {
+                "type": "minecraft:explode",
+                "attribute_to_user": true,
+                "radius": 6.5,
+                "create_fire": false,
+                "block_interaction": "none",
+                "damage_type": "minecraft:player_explosion",
+                "knockback_multiplier": 1.0,
+                "offset": [0, 0, 0],
+                "large_particle": {
+                  "type": "minecraft:explosion"
+                },
+                "small_particle": {
+                  "type": "minecraft:explosion"
+                },
+                "sound": "minecraft:entity.generic.explode"
+              },
+              {
+                "type": "minecraft:spawn_particles",
+                "particle": {
+                  "type": "minecraft:explosion"
+                },
+                "horizontal_position": {
+                  "type": "entity_position"
+                },
+                "vertical_position": {
+                  "type": "entity_position"
+                },
+                "horizontal_velocity": {
+                  "base": 0.0,
+                  "movement_scale": 0.0
+                },
+                "vertical_velocity": {
+                  "base": 0.1,
+                  "movement_scale": 0.0
+                },
+                "speed": 0.2
+              }
+            ]
+          },
+          "enchanted": "attacker",
+          "affected": "victim",
+          "requirements": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:is_projectile",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:all_of",
+            "effects": [
+              {
+                "type": "minecraft:explode",
+                "attribute_to_user": true,
+                "radius": 5.0,
+                "create_fire": false,
+                "block_interaction": "none",
+                "damage_type": "minecraft:player_explosion",
+                "knockback_multiplier": 1.0,
+                "offset": [0, 0, 0],
+                "large_particle": {
+                  "type": "minecraft:explosion"
+                },
+                "small_particle": {
+                  "type": "minecraft:explosion"
+                },
+                "sound": "minecraft:entity.generic.explode"
+              },
+              {
+                "type": "minecraft:spawn_particles",
+                "particle": {
+                  "type": "minecraft:explosion"
+                },
+                "horizontal_position": {
+                  "type": "entity_position"
+                },
+                "vertical_position": {
+                  "type": "entity_position"
+                },
+                "horizontal_velocity": {
+                  "base": 0.0,
+                  "movement_scale": 0.0
+                },
+                "vertical_velocity": {
+                  "base": 0.1,
+                  "movement_scale": 0.0
+                },
+                "speed": 0.2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }

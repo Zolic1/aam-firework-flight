@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:echo_shard",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.antimatter_sniper",
+        "color": "dark_purple",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 120,
+        "b_lmg_range": 768,
+        "b_lmg_spread": 0.0,
+        "b_lmg_rps": 0.25,
+        "b_lmg_mag": 1,
+        "b_lmg_reload": 80,
+        "b_lmg_pierce": 8,
+        "b_lmg_bspeed": 2200,
+        "b_lmg_pellets": 1,
+        "b_lmg_bars": 2,
+        "b_lmg_bullet_type": 5,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:antimatter_sniper_3d"
+    }
+  }
+}

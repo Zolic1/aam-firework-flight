@@ -1,0 +1,35 @@
+{
+    "description": {
+      "text": "缩小化",
+      "color": "aqua"
+    },
+    "anvil_cost": 6,
+    "max_level": 2,
+    "weight": 4,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 15
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "slots": ["armor"],
+
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "shrink",
+          "attribute": "minecraft:scale",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": -0.1,
+            "per_level_above_first": -0.1
+          },
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }

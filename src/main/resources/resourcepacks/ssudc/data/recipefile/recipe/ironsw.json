@@ -1,0 +1,27 @@
+{
+    "type":"crafting_shaped",
+    "key" :{
+        "#" : "minecraft:stick",
+        "*" : "minecraft:iron_ingot"
+    },
+    "pattern" : [
+        "*",
+        "*",
+        "#"
+    ],
+    "result" : {
+        "id" : "minecraft:iron_sword",
+        "category":"equipment",
+        "components" : {
+            "minecraft:blocks_attacks":{
+                "block_delay_seconds":0.0,
+                "disable_cooldown_scale":0.0,
+                "damage_reductions":[
+                    {"base":0,"factor":1}
+                ],
+                "block_sound":"block.beacon.deactivate"
+            }
+        }
+    }
+
+}

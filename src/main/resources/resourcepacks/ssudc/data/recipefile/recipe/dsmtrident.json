@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:heart_of_the_sea",
+  "base": "minecraft:diamond_sword",
+  "result": {
+    "id": "minecraft:trident"
+  },
+  "template": "minecraft:water_bucket"
+}

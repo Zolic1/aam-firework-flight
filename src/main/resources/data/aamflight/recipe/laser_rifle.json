@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:quartz",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.laser_rifle",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 18,
+        "b_lmg_range": 128,
+        "b_lmg_spread": 0.0,
+        "b_lmg_rps": 8,
+        "b_lmg_mag": 30,
+        "b_lmg_reload": 40,
+        "b_lmg_pierce": 5,
+        "b_lmg_bspeed": 1200,
+        "b_lmg_pellets": 1,
+        "b_lmg_bullet_type": 3,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:laser_rifle_3d"
+    }
+  }
+}

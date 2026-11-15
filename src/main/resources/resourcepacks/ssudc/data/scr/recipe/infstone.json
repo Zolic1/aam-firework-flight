@@ -1,0 +1,33 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "minecraft:lava_bucket",
+        "I": "minecraft:water_bucket"
+
+    },
+    "pattern": [
+        "GI"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "minecraft:armor_stand",
+                "Tags": ["infstone","infblock"],
+                "Invisible": true,
+                "Invulnerable": true,
+                "NoGravity": true,
+                "Marker": true,
+                "Small": true
+            },
+            "item_model": "minecraft:stone",
+            "item_name": {"text":"石头","color":"yellow","bold":true},
+            "lore": [
+                {
+                    "text": "无限方块","color": "green"
+                }
+            ]
+        }
+    }
+}

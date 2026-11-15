@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:pufferfish",
+        "minecraft:pufferfish",
+        "minecraft:snowball",
+        "minecraft:snowball"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:respiration": 2
+            }
+        }
+    }
+}

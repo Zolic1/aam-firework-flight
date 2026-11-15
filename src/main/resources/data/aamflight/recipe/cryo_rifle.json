@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:packed_ice",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.cryo_rifle",
+        "color": "blue",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 6,
+        "b_lmg_range": 96,
+        "b_lmg_spread": 1.5,
+        "b_lmg_rps": 5,
+        "b_lmg_mag": 20,
+        "b_lmg_reload": 50,
+        "b_lmg_pierce": 2,
+        "b_lmg_bspeed": 600,
+        "b_lmg_pellets": 1,
+        "b_lmg_bullet_type": 2,
+        "b_lmg_freeze": 140,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:cryo_rifle_3d"
+    }
+  }
+}

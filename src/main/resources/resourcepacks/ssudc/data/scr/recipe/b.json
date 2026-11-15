@@ -1,0 +1,37 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "I": "minecraft:lightning_rod",
+        "D": "minecraft:diamond"
+    },
+    "pattern": [
+        "D",
+        "I",
+        "D"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "lightning_bolt"
+            },
+            "item_model": "lightning_rod",
+            "item_name": [
+                {
+                    "text": "⚡ 便捷闪电 ⚡",
+                    "color": "blue",
+                    "bold": true
+                }
+            ],
+            "enchantment_glint_override": true,
+            "lore": [
+                {
+                    "text": "钻石引导天雷",
+                    "color": "gray",
+                    "italic": true
+                }
+            ]
+        }
+    }
+}

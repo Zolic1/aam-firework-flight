@@ -1,0 +1,33 @@
+
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "DSD",
+        "SPS",
+        "DSD"
+    ],
+    "key": {
+
+        "D": "minecraft:diamond_block",
+        "S": "breeze_rod",
+        "P": "diamond_pickaxe"
+
+    },
+    "result": {
+        "id": "minecraft:diamond_pickaxe",
+        "components": {
+            "enchantments": {
+                "efficiency": 6,
+                "enchantmentfile:effect5":3,
+                "enchantmentfile:non": 1
+            },
+            "repair_cost":2147483647,
+            "max_damage": 2031,
+            "item_name": {
+                "text": "重型暴风之稿",
+                "color": "gold"
+            }
+        },
+        "count": 1
+    }
+}

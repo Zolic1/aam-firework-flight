@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:cobweb",
+        "minecraft:vine",
+        "minecraft:dead_bush",
+        "#dlmc-synthesizable_enchanted_books:grass"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:silk_touch": 1
+            }
+        }
+    }
+}

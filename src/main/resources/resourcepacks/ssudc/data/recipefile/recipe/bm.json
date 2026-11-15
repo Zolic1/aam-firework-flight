@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:stone",
+    "minecraft:light_blue_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone",
+    "components": {
+      "item_model": "diamond",
+      "item_name": "人 造 钻 石(?"
+    }
+  }
+}

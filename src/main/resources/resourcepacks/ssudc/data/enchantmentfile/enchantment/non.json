@@ -1,0 +1,47 @@
+{
+    "description": {
+        "text": "不可逆",
+        "color": "red"
+    },
+    "anvil_cost": 10,
+    "max_level": 1,
+    "weight": 3,
+    "min_cost": {
+        "base": 30,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 70,
+        "per_level_above_first": 0
+    },
+    "slots": [
+        "mainhand",
+        "offhand",
+        "head",
+        "chest",
+        "legs",
+        "feet"
+    ],
+    "supported_items": "#minecraft:enchantable/durability",
+    "primary_items": "#minecraft:enchantable/durability",
+    "exclusive_set": [
+        "minecraft:mending",
+        "enchantmentfile:mendingpro"
+    ],
+    "effects": {
+        "minecraft:item_damage": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": 2.0
+                },
+                "requirements": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "items": "#minecraft:enchantable/durability"
+                    }
+                }
+            }
+        ]
+    }
+}

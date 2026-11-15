@@ -1,0 +1,15 @@
+{
+    "type":"crafting_shaped",
+    "key" :{
+        "*" : "minecraft:iron_sword"
+    },
+    "pattern" : [
+        "*"
+    ],
+    "result" : {
+        "id" : "iron_ingot",
+        "count" : 1
+
+            }
+
+}

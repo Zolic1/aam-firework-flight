@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:copper_ingot",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.smg",
+        "color": "white",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 5,
+        "b_lmg_range": 64,
+        "b_lmg_spread": 2.8,
+        "b_lmg_rps": 20,
+        "b_lmg_mag": 45,
+        "b_lmg_reload": 40,
+        "b_lmg_pierce": 1,
+        "b_lmg_bspeed": 480,
+        "b_lmg_pellets": 1,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:smg_3d"
+    }
+  }
+}

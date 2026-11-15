@@ -1,0 +1,31 @@
+
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DSD",
+        "DND"
+    ],
+    "key": {
+
+        "D": "minecraft:diamond",
+        "S": "minecraft:elytra",
+        "N": "netherite_chestplate"
+
+    },
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "item_name":{"text": "装甲鞘翅","color": "yellow"},
+            "max_damage": 1200,
+            "enchantments": {
+                "unbreaking": 4,
+                "protection": 4,
+                "fire_protection": 4,
+                "blast_protection": 4,
+                "projectile_protection": 4
+            }
+        },
+        "count": 1
+    }
+}

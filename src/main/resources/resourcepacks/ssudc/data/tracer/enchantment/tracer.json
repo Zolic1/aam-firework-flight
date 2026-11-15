@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "text": "曳光",
+    "color": "yellow"
+  },
+  "effects": {
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tracer:mark"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": "#minecraft:enchantable/crossbow",
+  "primary_items": "#minecraft:enchantable/crossbow",
+  "weight": 2
+}

@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand enchantmentfile:repair_one_percent

@@ -1,0 +1,205 @@
+{
+    "description": {"text": "瘫痪", "color": "white"},
+    "anvil_cost": 2,
+    "max_level": 5,
+    "weight": 7,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 5
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "slots": ["mainhand"],
+    "supported_items": "#minecraft:enchantable/sword",
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 3,
+                            "max_amplifier": 3
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:mining_fatigue",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 2,
+                            "max_amplifier": 2
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:blindness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.05
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 3,
+                            "max_amplifier": 3
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:mining_fatigue",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 2,
+                            "max_amplifier": 2
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:blindness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.06
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 3,
+                            "max_amplifier": 3
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:mining_fatigue",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 2,
+                            "max_amplifier": 2
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:blindness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.07
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 3,
+                            "max_amplifier": 3
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:mining_fatigue",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 2,
+                            "max_amplifier": 2
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:blindness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.08
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 3,
+                            "max_amplifier": 3
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:mining_fatigue",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 2,
+                            "max_amplifier": 2
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:blindness",
+                            "min_duration": 2.5,
+                            "max_duration": 2.5,
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.09
+                }
+            }
+        ]
+    }
+}

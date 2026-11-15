@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bedrock",
+    "minecraft:dragon_head",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:end_portal_frame",
+    "minecraft:heavy_core",
+    "minecraft:nether_star",
+    "minecraft:mojang_banner_pattern"
+    ]
+}

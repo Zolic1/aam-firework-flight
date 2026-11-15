@@ -1,0 +1,26 @@
+
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "DDD",
+        "SDS",
+        "SDS"
+    ],
+    "key": {
+
+        "D": "minecraft:stick",
+        "S": "minecraft:phantom_membrane"
+
+    },
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "item_name":{"text": "简易鞘翅","color": "green"},
+            "max_damage": 120,
+            "enchantments": {
+                "unbreaking": 1
+            }
+        },
+        "count": 1
+    }
+}

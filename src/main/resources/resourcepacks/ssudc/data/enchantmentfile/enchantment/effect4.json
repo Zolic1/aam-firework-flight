@@ -1,0 +1,45 @@
+{
+    "description": {
+      "text": "净化 I",
+      "color": "aqua"
+    },
+    "exclusive_set": [
+      "minecraft:protection",
+      "minecraft:fire_protection",
+      "minecraft:blast_protection",
+      "minecraft:projectile_protection",
+      "minecraft:feather_falling"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 6,
+    "max_level": 1,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 35,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": ["armor"],
+    "effects": {
+      "minecraft:tick": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "op:clear_negative_effects"
+          }
+        }
+      ],
+      "minecraft:item_damage": [
+        {
+          "effect": {
+            "type": "minecraft:multiply",
+            "factor": 3.0
+          }
+        }
+      ]
+    }
+  }

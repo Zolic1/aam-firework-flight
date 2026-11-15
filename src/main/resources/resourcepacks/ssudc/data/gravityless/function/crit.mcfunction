@@ -1,0 +1,1 @@
+$execute if predicate {"condition":"minecraft:random_chance","chance":$(crit_chance)} run data modify entity @s crit set value 1

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:tnt",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.grenade_launcher",
+        "color": "dark_green",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 0,
+        "b_lmg_range": 256,
+        "b_lmg_spread": 0.6,
+        "b_lmg_mag": 6,
+        "b_lmg_reload": 60,
+        "b_lmg_pierce": 1,
+        "b_lmg_bspeed": 200,
+        "b_lmg_pellets": 1,
+        "aam_launcher": 1,
+        "aam_lore_stale": 1,
+        "b_mfuse": 2.6,
+        "b_mseek": 256,
+        "b_mlife": 500,
+        "b_mspeed": 3,
+        "b_mlead": 0.8,
+        "b_mstart": 1.2,
+        "b_maccelt": 40,
+        "b_mseekdelay": 10,
+        "b_mpower": 8,
+        "b_lmg_rps": 0.45,
+        "b_lmg_bars": 2,
+        "b_mturn": 0.5,
+        "b_mflare": 0.35
+      },
+      "minecraft:item_model": "aamflight:grenade_launcher_3d"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:spider_eye",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.venom_sprayer",
+        "color": "green",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 3,
+        "b_lmg_range": 56,
+        "b_lmg_spread": 9.0,
+        "b_lmg_rps": 6,
+        "b_lmg_mag": 40,
+        "b_lmg_reload": 45,
+        "b_lmg_pierce": 1,
+        "b_lmg_bspeed": 420,
+        "b_lmg_pellets": 6,
+        "b_lmg_bullet_type": 2,
+        "b_lmg_poison": 4.0,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:venom_sprayer_3d"
+    }
+  }
+}

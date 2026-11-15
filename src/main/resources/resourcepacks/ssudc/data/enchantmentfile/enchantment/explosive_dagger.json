@@ -1,0 +1,56 @@
+{
+    "description": {
+        "text": "爆炸匕首",
+        "color": "gold"
+    },
+    "anvil_cost": 6,
+    "max_level": 1,
+    "weight": 3,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 0
+    },
+    "slots": ["mainhand"],
+    "supported_items": "#minecraft:enchantable/sword",
+    "primary_items": "#minecraft:enchantable/sword",
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": false,
+                    "radius": 0.5,
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "damage_type": "minecraft:player_explosion",
+                    "knockback_multiplier": 0.1,
+                    "large_particle": {"type": "minecraft:explosion"},
+                    "small_particle": {"type": "minecraft:explosion"},
+                    "sound": "minecraft:entity.generic.explode"
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": false,
+                    "radius": 0.5,
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "damage_type": "minecraft:player_explosion",
+                    "knockback_multiplier": 0.1,
+                    "large_particle": {"type": "minecraft:explosion"},
+                    "small_particle": {"type": "minecraft:explosion"},
+                    "sound": "minecraft:entity.generic.explode"
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            }
+        ]
+    }
+}

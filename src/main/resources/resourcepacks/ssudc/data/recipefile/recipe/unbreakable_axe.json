@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "nether_star",
+    "base": "diamond_axe",
+    "result": {
+      "id": "minecraft:diamond_axe",
+      "components": {
+        "unbreakable": {}
+      }
+    },
+    "template": "minecraft:netherite_upgrade_smithing_template"
+  }

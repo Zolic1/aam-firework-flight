@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:amethyst_shard",
+        "minecraft:glow_ink_sac",
+        "minecraft:emerald_block",
+        "minecraft:emerald_block",
+        "minecraft:arrow",
+        "minecraft:arrow",
+        "minecraft:arrow",
+        "minecraft:arrow"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:infinity": 1
+            }
+        }
+    }
+}

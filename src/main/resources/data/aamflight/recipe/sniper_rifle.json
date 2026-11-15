@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:spyglass",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.sniper_rifle",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 45,
+        "b_lmg_range": 512,
+        "b_lmg_spread": 0.05,
+        "b_lmg_rps": 1.2,
+        "b_lmg_mag": 5,
+        "b_lmg_reload": 50,
+        "b_lmg_pierce": 4,
+        "b_lmg_bspeed": 1400,
+        "b_lmg_pellets": 1,
+        "aam_lore_stale": 1
+      },
+      "minecraft:item_model": "aamflight:sniper_rifle_3d"
+    }
+  }
+}

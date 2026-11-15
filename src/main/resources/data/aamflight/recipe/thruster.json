@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "GFG",
+    "GBG"
+  ],
+  "key": {
+    "I": "minecraft:iron_block",
+    "G": "minecraft:glass",
+    "F": "minecraft:furnace",
+    "B": "minecraft:blast_furnace"
+  },
+  "result": {
+    "id": "minecraft:netherite_boots",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {"text": "推进装置", "color": "gold"},
+      "minecraft:lore": [
+        {"text": "★ 滑翔时自动推进", "color": "aqua", "italic": false},
+        {"text": "★ 每 tick 消耗 1 点耐久（最低保留 10）", "color": "gray", "italic": false},
+        {"text": "★ 可用煤炭在铁砧修复", "color": "dark_gray", "italic": false}
+      ],
+      "minecraft:max_damage": 12000,
+      "minecraft:attribute_modifiers": [
+        {"type": "minecraft:armor", "id": "aamflight:thruster_armor", "amount": 4, "operation": "add_value", "slot": "armor"},
+        {"type": "minecraft:armor_toughness", "id": "aamflight:thruster_toughness", "amount": 4, "operation": "add_value", "slot": "armor"}
+      ],
+      "minecraft:repairable": {"items": ["minecraft:coal"]},
+      "minecraft:custom_data": {"aam_thruster": true}
+    }
+  }
+}

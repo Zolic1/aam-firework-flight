@@ -1,0 +1,26 @@
+
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "D",
+        "D",
+        "S"
+    ],
+    "key": {
+
+        "D": "minecraft:diamond_block",
+        "S": "stick"
+
+    },
+    "result": {
+        "id": "minecraft:diamond_sword",
+        "components": {
+            "enchantments": {
+                "sharpness": 55
+                
+            },
+            "max_damage": 2031
+        },
+        "count": 1
+    }
+}

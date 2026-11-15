@@ -1,0 +1,37 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "minecraft:gold_ingot",
+        "I": "minecraft:iron_block",
+        "P": "minecraft:gunpowder",
+        "E": "minecraft:ender_eye"
+    },
+    "pattern": [
+        "GIG",
+        "PEP",
+        "GIG"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "minecraft:armor_stand",
+                "Tags": ["lxd"],
+                "Invisible": true,
+                "Invulnerable": true,
+                "NoGravity": true,
+                "Marker": true,
+                "Small": true
+            },
+            "item_model": "minecraft:pearlescent_froglight",
+            "item_name": {"text":"END-领域弹","color":"dark_purple","bold":true},
+            "lore": [
+                {"text":"右键地面召唤末地领域","color":"yellow"},
+                {"text":"10范围内获得：生命恢复、速度、力量"},
+                {"text":"持续20秒，敌对生物无效"},
+                {"text":"消耗品","color":"dark_gray","italic":true}
+            ]
+        }
+    }
+}

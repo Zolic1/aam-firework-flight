@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:lily_pad",
+        "minecraft:bowl",
+        "minecraft:leather",
+        "minecraft:rotten_flesh",
+        "minecraft:stick",
+        "minecraft:string",
+        "minecraft:bone",
+        "minecraft:tripwire_hook"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:luck_of_the_sea": 3
+            }
+        }
+    }
+}

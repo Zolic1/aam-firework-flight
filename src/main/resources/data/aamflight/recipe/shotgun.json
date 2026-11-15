@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "XCX",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:gunpowder",
+    "C": "minecraft:crossbow"
+  },
+  "result": {
+    "id": "aamflight:lmg_gun",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "aamflight.gun.shotgun",
+        "color": "red",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "b_lmg_dmg": 4,
+        "b_lmg_range": 24,
+        "b_lmg_spread": 7,
+        "b_lmg_mag": 8,
+        "b_lmg_reload": 60,
+        "b_lmg_pierce": 1,
+        "b_lmg_bspeed": 400,
+        "b_lmg_pellets": 10,
+        "aam_lore_stale": 1,
+        "b_lmg_rps": 0.7,
+        "b_lmg_bars": 2
+      },
+      "minecraft:item_model": "aamflight:shotgun_3d"
+    }
+  }
+}

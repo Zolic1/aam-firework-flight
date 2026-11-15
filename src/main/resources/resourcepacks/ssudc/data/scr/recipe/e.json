@@ -1,0 +1,48 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "P": "minecraft:porkchop"
+    },
+    "pattern": [
+        "PPP",
+        "PPP",
+        "PPP"
+    ],
+    "result": {
+        "id": "creeper_spawn_egg",
+        "category": "equipment",
+        "components": {
+            "entity_data": {
+                "id": "minecraft:pig",
+                "CustomNameVisible": true,
+                "CustomName": [
+                    {
+                        "text": "🍖",
+                        "color": "red"
+                    },
+                    {
+                        "text": "猪",
+                        "color": "pink"
+                    },
+                    {
+                        "text": "肉",
+                        "color": "red"
+                    },
+                    {
+                        "text": "🥩",
+                        "color": "gold"
+                    }
+                ],
+                "Tags": ["easter_egg", "pork"],
+                "Health": 100.0
+                
+            },
+            "item_model": "minecraft:porkchop",
+            "item_name": {"text":"猪肉彩蛋","color":"red","bold":true},
+            "lore": [
+                {"text":"召唤一只超耐打的小猪","color":"gray","italic":true},
+                {"text":"🍖 猪肉味彩蛋 🥩","color":"gold","italic":true}
+            ]
+        }
+    }
+}

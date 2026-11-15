@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "enchanted_book",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:book",
+        "minecraft:lava_bucket",
+        "minecraft:blaze_rod",
+        "minecraft:blaze_rod",
+        "minecraft:arrow",
+        "minecraft:arrow"
+    ],
+    "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+            "minecraft:stored_enchantments": {
+                "minecraft:flame": 2
+            }
+        }
+    }
+}

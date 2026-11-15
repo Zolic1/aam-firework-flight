@@ -1,4 +1,4 @@
-# AAM Firework Flight（Fabric 1.21.11 · v2.0.1）
+# AAM Firework Flight（Fabric 1.21.11 · v2.0.2）
 
 空战一体化模组：**24 把枪械**、追踪导弹与拦截、视线锁定、战雷式 **RWR 雷达**、干扰弹与隐蔽弹，外加可选内置的 **SSUDC 数据包**喵😼
 
@@ -119,7 +119,7 @@ cd aam-firework-flight
 gradlew.bat build
 ```
 
-产物：`build/libs/aam-firework-flight-2.0.1.jar`
+产物：`build/libs/aam-firework-flight-2.0.2.jar`
 
 > 需要 JDK 21；Loom `1.14-SNAPSHOT`、Mojang 官方映射、Minecraft `1.21.11`。
 > 提示：打包需要约 1 GB 空闲内存，游戏运行时内存不足会失败喵。

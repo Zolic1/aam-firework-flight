@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "aam-firework-flight",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "name": "AAM Firework Flight",
   "description": "空战一体化模组：24 把枪械（子弹 / 激光 / 霰弹）、追踪导弹与拦截、视线锁定、战雷式 RWR 雷达、干扰弹与隐蔽弹、爆炸与护甲游戏规则；可选内置 SSUDC 数据包喵。",
   "authors": ["Yuike"],
@@ -9,9 +9,9 @@
   "icon": "assets/aamflight/icon.png",
   "environment": "*",
   "contact": {
-    "homepage": "https://github.com/Yuike/aam-firework-flight",
-    "sources": "https://github.com/Yuike/aam-firework-flight",
-    "issues": "https://github.com/Yuike/aam-firework-flight/issues"
+    "homepage": "https://github.com/Zolic1/aam-firework-flight",
+    "sources": "https://github.com/Zolic1/aam-firework-flight",
+    "issues": "https://github.com/Zolic1/aam-firework-flight/issues"
   },
   "entrypoints": {
     "main": ["dev.aam.flight.AamFlightMod"],

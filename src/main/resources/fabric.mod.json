@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "aam-firework-flight",
-  "version": "2.0.2",
-  "name": "AAM Firework Flight",
+  "version": "2.0.3",
+  "name": "AAM Air Combat",
   "description": "空战一体化模组：24 把枪械（子弹 / 激光 / 霰弹）、追踪导弹与拦截、视线锁定、战雷式 RWR 雷达、干扰弹与隐蔽弹、爆炸与护甲游戏规则；可选内置 SSUDC 数据包喵。",
   "authors": ["Yuike"],
   "license": "MIT",

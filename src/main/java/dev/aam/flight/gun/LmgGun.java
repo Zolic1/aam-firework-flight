@@ -111,8 +111,7 @@ public final class LmgGun {
                 if (now % Math.max(1, dev.aam.flight.AamConfig.hudInterval) == 0) {
                     int total = Math.max(1, (int) ItemStats.effective(stack, "lmg_reload"));
                     double done = 1.0 - Math.min(1.0, (double) (end - now) / total);
-                    player.displayClientMessage(net.minecraft.network.chat.Component.literal(
-                            "§e换弹中 " + bar(done) + " §7" + String.format("%.1f", (end - now) / 20.0) + "s"), true);
+                    player.displayClientMessage(net.minecraft.network.chat.Component.translatable("aamflight.hud.reloading", bar(done), String.format("%.1f", (end - now) / 20.0)), true);
                 }
                 return;
             }
@@ -131,8 +130,9 @@ public final class LmgGun {
         // ---- 弹尽：扣分数 + 开始换弹喵 ----
         if (mag <= 0) {
             if (now % 4 == 0) {
-                player.displayClientMessage(net.minecraft.network.chat.Component.literal(
-                        "§c弹夹空了" + (Scores.get(player) <= 0 ? "（无分数喵）" : "")), true);
+                player.displayClientMessage(Scores.get(player) <= 0
+                        ? net.minecraft.network.chat.Component.translatable("aamflight.hud.empty_no_score")
+                        : net.minecraft.network.chat.Component.translatable("aamflight.hud.empty"), true);
             }
             if (Scores.get(player) > 0) {
                 int got = Scores.spendUpTo(player, (int) ItemStats.effective(stack, "lmg_cost"));
@@ -175,10 +175,8 @@ public final class LmgGun {
                 if (i > 0) barText.append(' ');
                 barText.append(bar(Math.max(0.0, Math.min(1.0, c - i))));
             }
-            player.displayClientMessage(net.minecraft.network.chat.Component.literal(
-                    "§a弹药 " + getMag(stack) + "§7/" + ItemStats.effectiveInt(stack, "lmg_mag")
-                            + "   §e分数 " + Scores.get(player)
-                            + "   §b" + barText), true);
+            player.displayClientMessage(net.minecraft.network.chat.Component.translatable("aamflight.hud.ammo",
+                    getMag(stack), ItemStats.effectiveInt(stack, "lmg_mag"), Scores.get(player), barText.toString()), true);
         }
     }
 

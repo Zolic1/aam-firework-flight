@@ -107,5 +107,21 @@
   "aamflight.help.tip_1": "· Keep the crosshair on a target for 3s to auto-lock; press X to toggle",
   "aamflight.help.tip_2": "· Empty magazine starts a reload which costs score (ammo converts 1:1)",
   "aamflight.help.tip_3": "· The grenade launcher fires homing missiles; stats live on the item",
-  "aamflight.help.click_to_apply": "Click to apply this bullet type"
+  "aamflight.help.click_to_apply": "Click to apply this bullet type",
+  "item.aamflight.rwr_helmet": "RWR Helmet",
+  "item.aamflight.thruster": "Thruster",
+  "item.aamflight.aam_crossbow": "AAM Launcher",
+  "aamflight.hud.ammo": "§aAMMO %s§7/%s   §eSCORE %s   §b%s",
+  "aamflight.hud.reloading": "§eRELOADING %s §7%ss",
+  "aamflight.hud.empty": "§cMagazine empty",
+  "aamflight.hud.empty_no_score": "§cMagazine empty (no score)",
+  "aamflight.hud.locking": "LOCKING %s%%",
+  "aamflight.rwr.enemy_lock": "ENEMY LOCK",
+  "aamflight.rwr.enemy_missile": "ENEMY MISSILE",
+  "aamflight.lock.missile": "Missile",
+  "aamflight.lock.friendly": "[Friendly] %s",
+  "aamflight.lock.destroyed": "TARGET DESTROYED",
+  "aamflight.lock.maneuver": "Maneuver %ss",
+  "aamflight.lock.impact": "Impact in %ss",
+  "aamflight.lock.impact_none": "Impact --"
 }

@@ -107,5 +107,21 @@
   "aamflight.help.tip_1": "· 准星对准目标保持 3 秒自动锁定，按 X 切换 / 取消锁定喵",
   "aamflight.help.tip_2": "· 弹夹打空 → 换弹，消耗分数（弹药 1:1 换分数喵）",
   "aamflight.help.tip_3": "· 榴弹发射器打的是追踪导弹，参数在物品属性里喵",
-  "aamflight.help.click_to_apply": "点击设置为该弹种喵"
+  "aamflight.help.click_to_apply": "点击设置为该弹种喵",
+  "item.aamflight.rwr_helmet": "RWR 头盔",
+  "item.aamflight.thruster": "推进装置",
+  "item.aamflight.aam_crossbow": "空对空导弹发射器",
+  "aamflight.hud.ammo": "§a弹药 %s§7/%s   §e分数 %s   §b%s",
+  "aamflight.hud.reloading": "§e换弹中 %s §7%ss",
+  "aamflight.hud.empty": "§c弹夹空了",
+  "aamflight.hud.empty_no_score": "§c弹夹空了（无分数喵）",
+  "aamflight.hud.locking": "锁定中 %s%%",
+  "aamflight.rwr.enemy_lock": "敌锁定",
+  "aamflight.rwr.enemy_missile": "敌导弹",
+  "aamflight.lock.missile": "导弹",
+  "aamflight.lock.friendly": "[友方] %s",
+  "aamflight.lock.destroyed": "已击毁目标",
+  "aamflight.lock.maneuver": "机动时间 %ss",
+  "aamflight.lock.impact": "命中预警 %ss",
+  "aamflight.lock.impact_none": "命中预警 --"
 }

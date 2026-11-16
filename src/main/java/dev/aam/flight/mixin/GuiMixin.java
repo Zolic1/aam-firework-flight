@@ -90,8 +90,10 @@ public class GuiMixin {
         }
 
         if (data != null && data.threat()) {
-            String label = data.lockedOnMe() ? "敌锁定" : "敌导弹";
-            int tw = mc.font.width(label);
+            net.minecraft.network.chat.Component labelComp = data.lockedOnMe()
+                    ? net.minecraft.network.chat.Component.translatable("aamflight.rwr.enemy_lock")
+                    : net.minecraft.network.chat.Component.translatable("aamflight.rwr.enemy_missile");
+            int tw = mc.font.width(labelComp);
             int bw = tw + 10;
             int bh = 12;
             int bx = cx - bw / 2;
@@ -101,7 +103,7 @@ public class GuiMixin {
             g.fill(bx, by + bh - 1, bx + bw, by + bh, C_GREEN);
             g.fill(bx, by, bx + 1, by + bh, C_GREEN);
             g.fill(bx + bw - 1, by, bx + bw, by + bh, C_GREEN);
-            g.drawString(mc.font, label, cx - tw / 2, by + 2, C_GREEN, false);
+            g.drawString(mc.font, labelComp, cx - tw / 2, by + 2, C_GREEN, false);
         }
 
         if (data == null) return;
@@ -109,7 +111,8 @@ public class GuiMixin {
         if (data.locked()) {
             drawLock(g, mc, data);
         } else if (data.lockProgress() > 0.0f) {
-            String p = "锁定中 " + Math.round(data.lockProgress() * 100) + "%";
+            net.minecraft.network.chat.Component p = net.minecraft.network.chat.Component.translatable(
+                    "aamflight.hud.locking", Math.round(data.lockProgress() * 100));
             int pw = mc.font.width(p);
             g.drawString(mc.font, p, g.guiWidth() / 2 - pw / 2, g.guiHeight() / 2 + 46, C_LOCKING, true);
         }
@@ -259,12 +262,9 @@ public class GuiMixin {
         g.fill(x + hw - t, y + hh - leg, x + hw, y + hh, C_GREEN);
 
         // 名称
-        String name = data.lockName() == null ? "" : data.lockName();
-        if (data.lockFriendly()) {
-            name = "[友方] " + name;   // 同队目标加前缀喵
-        }
-        int nw = mc.font.width(name);
-        g.drawString(mc.font, name, x - nw / 2, y - hh - 12, C_GREEN, true);
+        net.minecraft.network.chat.Component nameComp = lockNameComponent(data);
+        int nw = mc.font.width(nameComp);
+        g.drawString(mc.font, nameComp, x - nw / 2, y - hh - 12, C_GREEN, true);
 
         // 血条
         float hp = data.lockHp();
@@ -279,7 +279,7 @@ public class GuiMixin {
         if (data.lockDestroyed()) {
             g.fill(barX - 1, barY - 1, barX + barW + 1, barY + 5, 0xB0000000);
             g.fill(barX, barY, barX + barW, barY + 4, 0xFF203020);
-            String dead = "已击毁目标";
+            net.minecraft.network.chat.Component dead = net.minecraft.network.chat.Component.translatable("aamflight.lock.destroyed");
             g.drawString(mc.font, dead, x - mc.font.width(dead) / 2, barY + 7, 0xFFFF5050, true);
             return;
         }
@@ -295,10 +295,11 @@ public class GuiMixin {
                 g.fill(barX, barY, barX + (int) (barW * ratio), barY + 4, hpColorM);
             }
 
-            String line2 = "机动时间 " + String.format("%.1fs", data.lockManeuver());
-            String line3 = (data.lockEta() >= 0)
-                    ? "命中预警 " + String.format("%.1fs", data.lockEta())
-                    : "命中预警 --";
+            net.minecraft.network.chat.Component line2 = net.minecraft.network.chat.Component.translatable(
+                    "aamflight.lock.maneuver", String.format("%.1f", data.lockManeuver()));
+            net.minecraft.network.chat.Component line3 = (data.lockEta() >= 0)
+                    ? net.minecraft.network.chat.Component.translatable("aamflight.lock.impact", String.format("%.1f", data.lockEta()))
+                    : net.minecraft.network.chat.Component.translatable("aamflight.lock.impact_none");
             g.drawString(mc.font, line2, x - mc.font.width(line2) / 2, barY + 7, C_GREEN_SOFT, true);
             g.drawString(mc.font, line3, x - mc.font.width(line3) / 2, barY + 18, C_GREEN_SOFT, true);
 
@@ -362,11 +363,22 @@ public class GuiMixin {
         int tw = mc.font.width(info);
         g.drawString(mc.font, info, ax - tw / 2, (dirY > 0) ? ay + 14 : ay - 22, C_GREEN, true);
 
-        String name = data.lockName() == null ? "" : data.lockName();
-        int nw = mc.font.width(name);
-        g.drawString(mc.font, name, ax - nw / 2, (dirY > 0) ? ay + 25 : ay - 33, C_GREEN_SOFT, true);
+        net.minecraft.network.chat.Component nameComp = lockNameComponent(data);
+        int nw = mc.font.width(nameComp);
+        g.drawString(mc.font, nameComp, ax - nw / 2, (dirY > 0) ? ay + 25 : ay - 33, C_GREEN_SOFT, true);
     }
 
+    /** 锁定目标的名字（导弹走翻译键，其它用实体名喵） */
+    private static net.minecraft.network.chat.Component lockNameComponent(RadarPayload data) {
+        if (data.lockIsMissile()) {
+            return net.minecraft.network.chat.Component.translatable("aamflight.lock.missile");
+        }
+        String n = data.lockName() == null ? "" : data.lockName();
+        if (data.lockFriendly()) {
+            return net.minecraft.network.chat.Component.translatable("aamflight.lock.friendly", n);
+        }
+        return net.minecraft.network.chat.Component.literal(n);
+    }
     private static void thickLine(GuiGraphics g, int x1, int y1, int x2, int y2, int r, int color) {
         int steps = Math.max(Math.abs(x2 - x1), Math.abs(y2 - y1));
         if (steps <= 0) return;

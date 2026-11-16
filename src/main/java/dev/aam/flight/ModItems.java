@@ -347,7 +347,7 @@ public final class ModItems {
         CompoundTag tag = new CompoundTag();
         tag.putBoolean("aam_rwr", true);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
-        stack.set(DataComponents.ITEM_NAME, Component.literal("RWR 头盔").withStyle(ChatFormatting.GREEN));
+        stack.set(DataComponents.ITEM_NAME, Component.translatable("item.aamflight.rwr_helmet").withStyle(ChatFormatting.GREEN));
         stack.set(DataComponents.MAX_DAMAGE, 3000);
         stack.set(DataComponents.ATTRIBUTE_MODIFIERS, new ItemAttributeModifiers(List.of(
                 entry(Attributes.ARMOR, 4.0, "rwr_armor"),
@@ -362,7 +362,7 @@ public final class ModItems {
         CompoundTag tag = new CompoundTag();
         tag.putBoolean("aam_thruster", true);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
-        stack.set(DataComponents.ITEM_NAME, Component.literal("推进装置").withStyle(ChatFormatting.GOLD));
+        stack.set(DataComponents.ITEM_NAME, Component.translatable("item.aamflight.thruster").withStyle(ChatFormatting.GOLD));
         stack.set(DataComponents.MAX_DAMAGE, 12000);
         stack.set(DataComponents.ATTRIBUTE_MODIFIERS, new ItemAttributeModifiers(List.of(
                 entry(Attributes.ARMOR, 4.0, "thruster_armor"),
@@ -376,7 +376,7 @@ public final class ModItems {
     /** 带「空对空导弹」附魔的弩喵 */
     public static ItemStack aamCrossbow(HolderLookup.Provider holders) {
         ItemStack stack = new ItemStack(Items.CROSSBOW);
-        stack.set(DataComponents.ITEM_NAME, Component.literal("空对空导弹发射器").withStyle(ChatFormatting.AQUA));
+        stack.set(DataComponents.ITEM_NAME, Component.translatable("item.aamflight.aam_crossbow").withStyle(ChatFormatting.AQUA));
         try {
             HolderLookup.RegistryLookup<Enchantment> lookup = holders.lookupOrThrow(Registries.ENCHANTMENT);
             Holder<Enchantment> ench = lookup.getOrThrow(AAM_MISSILE_KEY);

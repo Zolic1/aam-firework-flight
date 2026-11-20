@@ -123,5 +123,7 @@
   "aamflight.lock.destroyed": "TARGET DESTROYED",
   "aamflight.lock.maneuver": "Maneuver %ss",
   "aamflight.lock.impact": "Impact in %ss",
-  "aamflight.lock.impact_none": "Impact --"
+  "aamflight.lock.impact_none": "Impact --",
+  "block.aamflight.tuning_bench": "Tuning Bench",
+  "item.aamflight.tuning_bench": "Tuning Bench"
 }

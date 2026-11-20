@@ -34,6 +34,7 @@ public class AamFlightMod implements ModInitializer {
     public void onInitialize() {
         ModEntities.init();
         ModItems.init();
+        dev.aam.flight.bench.ModBlocks.register();   // 调参工作台喵
         ModGameRules.init();   // 注册自定义游戏规则喵
 
         // SSUDC 做成可选内置数据包（建世界时能在数据包列表里勾选喵）
@@ -42,6 +43,28 @@ public class AamFlightMod implements ModInitializer {
                 net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("aam-firework-flight").orElseThrow(),
                 Component.literal("SSUDC 数据包"),
                 net.fabricmc.fabric.api.resource.ResourcePackActivationType.NORMAL);
+        // ==================== 调参工作台网络包喵 ====================
+        net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry.playC2S()
+                .register(dev.aam.flight.bench.TuneApplyPayload.TYPE, dev.aam.flight.bench.TuneApplyPayload.CODEC);
+        net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking.registerGlobalReceiver(
+                dev.aam.flight.bench.TuneApplyPayload.TYPE, (payload, context) -> {
+                    var player = context.player();
+                    if (!(player.containerMenu instanceof dev.aam.flight.bench.TuningMenu menu)) return;
+                    ItemStack gun = menu.gun();
+                    if (gun.isEmpty()) return;
+                    if (payload.reset()) {
+                        dev.aam.flight.item.ItemStats.clearAll(gun);
+                    } else {
+                        for (int i = 0; i < payload.names().size(); i++) {
+                            String name = payload.names().get(i);
+                            var opt = AamConfig.option(name);
+                            if (opt == null) continue;
+                            dev.aam.flight.item.ItemStats.setBase(gun, name, opt.clamp(payload.values().get(i)));
+                        }
+                    }
+                    dev.aam.flight.item.ItemStats.rebuildLore(gun);
+                    menu.refresh();
+                });
         dev.aam.flight.config.ConfigStore.load();   // 读取 config/aam-flight.properties 喵
         ModEnchantments.init();
         ServerLifecycleEvents.SERVER_STARTED.register(Scoring::ensureObjective);

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:oak_planks",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    "IPI",
+    "P P",
+    "IRI"
+  ],
+  "result": {
+    "id": "aamflight:tuning_bench",
+    "count": 1
+  }
+}

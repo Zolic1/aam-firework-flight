@@ -31,6 +31,9 @@ public class AamFlightClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.AAM_MISSILE, AamMissileRenderer::new);
 
         KeyBindingHelper.registerKeyBinding(RELEASE_LOCK);
+        net.minecraft.client.gui.screens.MenuScreens.register(
+                dev.aam.flight.bench.ModBlocks.TUNING_MENU,
+                dev.aam.flight.bench.TuningScreen::new);   // 调参工作台界面喵
 
         ClientPlayNetworking.registerGlobalReceiver(RadarPayload.TYPE, (payload, context) ->
                 context.client().execute(() -> LATEST = payload));

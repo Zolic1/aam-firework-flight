@@ -123,5 +123,7 @@
   "aamflight.lock.destroyed": "已击毁目标",
   "aamflight.lock.maneuver": "机动时间 %ss",
   "aamflight.lock.impact": "命中预警 %ss",
-  "aamflight.lock.impact_none": "命中预警 --"
+  "aamflight.lock.impact_none": "命中预警 --",
+  "block.aamflight.tuning_bench": "调参工作台",
+  "item.aamflight.tuning_bench": "调参工作台"
 }

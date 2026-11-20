@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "aamflight:block/tuning_bench_top",
+    "side": "aamflight:block/tuning_bench_side",
+    "bottom": "minecraft:block/oak_planks"
+  }
+}

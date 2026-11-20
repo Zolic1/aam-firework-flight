@@ -91,6 +91,7 @@ public final class ModItems {
     }
 
     private static void fillItems(CreativeModeTab.ItemDisplayParameters params, CreativeModeTab.Output out) {
+        out.accept(dev.aam.flight.bench.ModBlocks.TUNING_BENCH_ITEM);
         out.accept(rwrHelmet());
         out.accept(thruster());
         out.accept(new ItemStack(LMG_GUN));

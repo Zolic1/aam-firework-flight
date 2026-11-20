@@ -38,6 +38,8 @@ public final class AamConfig {
     public static double missileFuse = 2.2;
     public static int missileLife = 1500;
     public static double missileSeekRange = 256.0;
+    public static int missileSalvo = 1;      // 导弹齐射数喵
+    public static int rocketSalvo = 1;      // 火箭弹齐射数喵
 
     // ---- 轻机枪喵 ----
     public static double lmgDamage = 7.0;
@@ -109,7 +111,9 @@ public final class AamConfig {
         opt("speed", () -> targetSpeed, v -> targetSpeed = v, 0.1, 20.0, false);
         opt("thruster_accel", () -> thrusterAccel, v -> thrusterAccel = v, 0.01, 2.0, false);
 
-        opt("mspeed", () -> missileMaxSpeed, v -> missileMaxSpeed = v, 0.2, 10.0, false);
+        opt("msalvo", () -> missileSalvo, v -> missileSalvo = (int) v, 1, 16, true);
+    opt("rsalvo", () -> rocketSalvo, v -> rocketSalvo = (int) v, 1, 16, true);
+    opt("mspeed", () -> missileMaxSpeed, v -> missileMaxSpeed = v, 0.2, 10.0, false);
         opt("mstart", () -> missileStartSpeed, v -> missileStartSpeed = v, 0.1, 10.0, false);
         opt("maccelt", () -> missileAccelTicks, v -> missileAccelTicks = v, 1, 400, true);
         opt("mseekdelay", () -> missileSeekDelay, v -> missileSeekDelay = v, 0, 400, true);

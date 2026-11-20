@@ -9,6 +9,8 @@ public final class ModEnchantments {
 
     public static final Identifier LAUNCH_MISSILE_ID =
             Identifier.fromNamespaceAndPath("aamflight", "launch_missile");
+    public static final Identifier LAUNCH_ROCKET_ID =
+            Identifier.fromNamespaceAndPath("aamflight", "launch_rocket");
 
     private ModEnchantments() {}
 
@@ -16,5 +18,8 @@ public final class ModEnchantments {
         Registry.register(BuiltInRegistries.ENCHANTMENT_ENTITY_EFFECT_TYPE,
                 LAUNCH_MISSILE_ID,
                 LaunchMissileEffect.CODEC);
+        Registry.register(BuiltInRegistries.ENCHANTMENT_ENTITY_EFFECT_TYPE,
+                LAUNCH_ROCKET_ID,
+                LaunchRocketEffect.CODEC);
     }
 }

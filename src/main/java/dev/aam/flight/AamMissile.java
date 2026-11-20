@@ -87,6 +87,8 @@ public class AamMissile extends AbstractArrow implements net.minecraft.world.ent
     private float hp = MISSILE_HP;
     private boolean exploding = false;   // 防止连锁爆炸递归喵
     private boolean targetIsMissile = false;   // 我的目标是不是导弹喵
+    /** 火箭弹：无制导，直线飞喵 */
+    public boolean unguided = false;
     private AamMissile targetMissileRef = null;   // 我锁定的那枚导弹喵
 
     /** 这枚导弹是不是正锁着某个实体喵 */
@@ -209,7 +211,8 @@ public class AamMissile extends AbstractArrow implements net.minecraft.world.ent
         // ---- 制导 ----
         // 发射 0.6 秒（可调）后才开始锁定喵
         if (flareBlockTicks > 0) flareBlockTicks--;
-        Entity target = (this.tickCount >= (int) pSeekDelay && flareBlockTicks <= 0) ? resolveTarget() : null;
+        Entity target = (!unguided && this.tickCount >= (int) pSeekDelay && flareBlockTicks <= 0)
+                ? resolveTarget() : null;
 
         // ---- 重追踪：必须「先接近再远离」才算一次越过喵 ----
         double targetDist = -1.0;

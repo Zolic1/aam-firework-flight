@@ -125,5 +125,8 @@
   "aamflight.lock.impact": "Impact in %ss",
   "aamflight.lock.impact_none": "Impact --",
   "block.aamflight.tuning_bench": "Tuning Bench",
-  "item.aamflight.tuning_bench": "Tuning Bench"
+  "item.aamflight.tuning_bench": "Tuning Bench",
+  "enchantment.aamflight.aam_rocket": "Rocket (unguided)",
+  "aamflight.gun.msalvo": "Missile salvo",
+  "aamflight.gun.rsalvo": "Rocket salvo"
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "aamflight:aam_missile"
+    "aamflight:aam_missile",
+    "aamflight:aam_rocket"
   ]
 }

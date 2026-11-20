@@ -125,5 +125,8 @@
   "aamflight.lock.impact": "命中预警 %ss",
   "aamflight.lock.impact_none": "命中预警 --",
   "block.aamflight.tuning_bench": "调参工作台",
-  "item.aamflight.tuning_bench": "调参工作台"
+  "item.aamflight.tuning_bench": "调参工作台",
+  "enchantment.aamflight.aam_rocket": "火箭弹（无制导）",
+  "aamflight.gun.msalvo": "导弹齐射数",
+  "aamflight.gun.rsalvo": "火箭齐射数"
 }

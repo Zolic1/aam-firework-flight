@@ -161,6 +161,8 @@ public final class ItemStats {
         NAMES.put("lmg_spread", "弹道偏移");
         NAMES.put("lmg_pellets", "弹丸数");
         NAMES.put("lmg_rate", "冷却");
+        NAMES.put("msalvo", "导弹齐射数");
+        NAMES.put("rsalvo", "火箭齐射数");
         NAMES.put("speed", "推进速度");
         NAMES.put("thruster_accel", "推进加速");
         NAMES.put("mpower", "爆炸当量");

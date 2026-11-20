@@ -23,6 +23,7 @@ public final class ModBlocks {
     public static final Identifier ID = Identifier.fromNamespaceAndPath("aamflight", "tuning_bench");
 
     public static final Block TUNING_BENCH = new TuningBenchBlock(BlockBehaviour.Properties.of()
+            .setId(ResourceKey.create(Registries.BLOCK, ID))
             .mapColor(MapColor.WOOD)
             .strength(2.5f)
             .sound(SoundType.WOOD));
